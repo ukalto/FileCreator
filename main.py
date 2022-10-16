@@ -8,7 +8,7 @@ def create():
         os.mkdir(path)
     file_format = input("File-format: ")
     while True:
-        filename = input("Filename: ") + file_format
+        filename = input("Filename: ") + "." + file_format
         text = input(f"Text to create SQL {filename} file: ")
         file1 = open(os.path.join(path, filename), "w")
         file1.write(text)
