@@ -9,7 +9,7 @@ def create():
     file_format = input("File-format: ")
     while True:
         filename = input("Filename: ") + "." + file_format
-        text = input(f"Text to create SQL {filename} file: ")
+        text = input(f"Text to create {filename}.{file_format} file: ")
         file1 = open(os.path.join(path, filename), "w")
         file1.write(text)
         file1.close()
